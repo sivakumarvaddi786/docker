@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
-RUN sudo apt-get update
-RUN sudo apt-get -y install python3-pip
-RUN sudo pip install -r requirements.txt
-COPY sudo . /app
-CMD sudo python3 /app/lb.py
+RUN apt-get update
+RUN apt-get -y install python3-pip
+RUN pip install -r requirements.txt
+COPY . /app
+CMD  python3 /app/lb.py
