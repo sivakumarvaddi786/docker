@@ -1,1 +1,4 @@
+sys
+os
+subprocess
 haproxy-stats
