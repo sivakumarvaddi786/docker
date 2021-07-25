@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import sys, os, subprocess
 from haproxystats import HAProxyServer
 haproxy1 = HAProxyServer(base_url="qsoec-crm-lb02:9000/haproxy_stats", user="haproxy", password="stats", verify_ssl=False, timeout=50, https=False)
