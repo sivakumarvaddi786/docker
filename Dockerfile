@@ -5,5 +5,6 @@ RUN pip3 install haproxy-stats
 COPY . /app
 WORKDIR /app
 CMD chmod +x *
+CMD ls -l
 CMD  python3 lb.py
 
