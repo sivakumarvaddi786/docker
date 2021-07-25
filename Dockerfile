@@ -1,4 +1,5 @@
 FROM ubuntu:18.04
+RUN apt-get install python3-pip
+RUN pip install -r requirements.txt
 COPY . /app
-RUN make /app
-CMD python3 /app/app.py
+CMD python3 /app/lb.py
