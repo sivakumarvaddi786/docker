@@ -4,7 +4,7 @@ RUN apt-get -y install python3 python3-pip
 RUN pip3 install haproxy-stats
 COPY . /app
 WORKDIR /app
-CMD chmod +x *
+RUN chmod +x *
 CMD ls -l
 CMD  python3 lb.py
 
