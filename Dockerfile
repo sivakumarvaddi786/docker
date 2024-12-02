@@ -7,4 +7,4 @@ WORKDIR /app
 RUN chmod +x *
 CMD ls -l
 CMD  python3 lb.py
-
+#RUN echo 'user-account ALL=NOPASSWD: /usr/bin/apt-get , /usr/bin/apt' >> /etc/sudoers.d/50-user-account
